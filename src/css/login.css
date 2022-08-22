@@ -1,0 +1,117 @@
+body{                                                      /* Diseño del cuerpo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    min-height: 97vh;
+    background-image: url(/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::before{                                              /* Colores del fondo */
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(90deg,#31c6e7,#10dd2b);
+    opacity: 0.5;
+    z-index: -1;
+}
+#Contenedor-login{                                         /* Diseño del contenedor del login */     
+    width: 420px;
+    height: 640px;
+    background-color: rgba(2, 2, 2, 0.479);
+    box-shadow: 10px 10px 30px #000;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.cont-logo{                                                /* Diseño del contenedor del logo*/
+    width: 260px;
+    height: 230px;
+    margin: 0px auto 20px;
+}
+.barra{                                                    /* Diseño de barra desplegable usuario */
+    width: 150px;
+    height: 38px;
+    padding: 6px;
+    margin: 2px auto;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: rgb(139, 248, 50);
+    cursor: pointer;
+    outline: none;
+}
+.barra:hover, .barra:focus{                                /* Diseño de reaccion barra desplegable usuario */
+    width: 150px;
+    height: 38px;
+    margin: 2px;
+    font-size: 17px;
+    border-color: rgb(139, 248, 50);
+}
+.txt-login{                                                /* Diseño de campo de texto de ID Y PASSWORD */
+    width: 230px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 0px 31px 0px 28px;
+    border-style: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+.txt-login:hover, .txt-login:focus{                        /* Diseño de reaccion del campo de texto ID y contraseña */
+    border-color: rgb(139, 248, 50);
+    border-radius: 7px;  
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px greenyellow;
+}
+::-webkit-input-placeholder{                               /*Diseño del placeholder*/
+    color: #ddd;
+}
+.Recordar{                                                 /* Diseño del texto recordar contraseña */
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+}
+.checkbox{                                                 /* Diseño del checkbox */
+    cursor: pointer;
+}
+.recuperar-pass{                                           /* Diseño de los links*/
+    text-align: center;
+    margin: 0px auto 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+.recuperar-pass:hover, .Recordar:hover,
+.recuperar-pass:focus, .Recordar:focus{                    /* Diseño de reaccion iconos y texto tipo link*/
+    color: rgb(139, 248, 50);
+}
+.btn-login{                                                /* Diseño de boton inicio sesion */
+    height: 40px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(139, 248, 50);
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn-login:hover, .btn-login:focus{                                          /* Diseño de reaccion del boton inicio sesion */
+    border-color: rgb(139, 248, 50);
+    height: 46px;
+    margin: 12px auto;
+    font-size: 18px;
+}
