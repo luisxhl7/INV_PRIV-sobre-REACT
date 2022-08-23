@@ -139,3 +139,11 @@ body::before{                                              /* Colores del fondo 
     margin: 12px auto;
     font-size: 18px;
 }
+@media screen and (max-width: 430px) {
+    #Contenedor-login{                                     /* Diseño del contenedor del login */     
+        width: 350px;
+    }
+    .txt-login{                                            /* Diseño de campo de texto de ID Y PASSWORD */
+        width: 210px;
+    }
+}
