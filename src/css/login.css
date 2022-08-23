@@ -60,6 +60,9 @@ body::before{                                              /* Colores del fondo 
     font-size: 17px;
     border-color: rgb(139, 248, 50);
 }
+.Contenedor-txt{                                           /* contenedor del password y ojo */      
+    position: relative;
+}
 .txt-login{                                                /* Diseño de campo de texto de ID Y PASSWORD */
     width: 230px;
     height: 40px;
@@ -81,6 +84,26 @@ body::before{                                              /* Colores del fondo 
 ::-webkit-input-placeholder{                               /*Diseño del placeholder*/
     color: #ddd;
 }
+.icono-user{                                               /* Diseño del boton icono usuario */
+    position: absolute;
+    font-size: 17px;
+    left: 3px;
+    top: 30px;
+}
+.inoco-ojo{                                                /* Diseño del boton icono ojo */
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+    top: 31px;
+    color: #000;
+    cursor: pointer;
+}
+.icono-unlock{                                             /* Diseño del boton icono candado */                                   
+    position: absolute;
+    font-size: 20px;
+    left: 4px;
+    top: 27px;
+}
 .Recordar{                                                 /* Diseño del texto recordar contraseña */
     color: white;
     cursor: pointer;
@@ -97,7 +120,8 @@ body::before{                                              /* Colores del fondo 
     text-decoration: none;
 }
 .recuperar-pass:hover, .Recordar:hover,
-.recuperar-pass:focus, .Recordar:focus{                    /* Diseño de reaccion iconos y texto tipo link*/
+.recuperar-pass:focus, .Recordar:focus,
+.inoco-ojo:hover{                                          /* Diseño de reaccion iconos y texto tipo link*/
     color: rgb(139, 248, 50);
 }
 .btn-login{                                                /* Diseño de boton inicio sesion */
@@ -109,7 +133,7 @@ body::before{                                              /* Colores del fondo 
     cursor: pointer;
     font-size: 15px;
 }
-.btn-login:hover, .btn-login:focus{                                          /* Diseño de reaccion del boton inicio sesion */
+.btn-login:hover, .btn-login:focus{                        /* Diseño de reaccion del boton inicio sesion */
     border-color: rgb(139, 248, 50);
     height: 46px;
     margin: 12px auto;

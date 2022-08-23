@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Conlogin } from './App'
+import { Contlogin } from './App'
 ReactDOM.createRoot(document.getElementById('Contenedor-login')).render(
   <React.StrictMode>
-    <Conlogin />
+    <Contlogin />
   </React.StrictMode>
 )
